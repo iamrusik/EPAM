@@ -1,0 +1,88 @@
+.table {
+    margin-bottom: 15px;
+}
+
+.table, .innertable1, .innertable2 {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table td {
+    padding: 5px;
+}
+
+.table, .table tr, .table td {
+    border: 1px solid blue;
+}
+
+
+.innertable1, .innertable1 tr, .innertable1 td {
+    border: 1px solid orange;
+}
+
+.innertable2, .innertable2 tr, .innertable2 td {
+    border: 1px solid pink;
+}
+
+.table2 {
+    margin-bottom: 15px;
+}
+
+.table2 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table2 tr, .table2 td, .table2 th {
+    border: 1px solid gray;
+}
+
+.table2 td, .table2 th {
+    padding: 5px;
+}
+
+#ability {
+    display: block;
+}
+
+.table3 tr:last-child td {
+    text-align: center;
+}
+
+.table3 th {
+    background-color: rgb(26, 104, 104);
+}
+
+.table3 {
+    margin-bottom: 15px;
+}
+
+.lists-box {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.list-square {
+    list-style-type: square;
+}
+
+.list-circle {
+    list-style-type: circle;
+}
+
+.list-none {
+    list-style-type: none;
+}
+
+.list-decimal-leading-zero {
+    list-style-type: decimal-leading-zero;
+}
+
+.list-lower-latin {
+    list-style-type: lower-latin;
+}
+
+.list-lower-roman {
+    list-style-type: lower-roman;
+}

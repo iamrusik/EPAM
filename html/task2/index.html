@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <td>foo</td>
+            <td>bar</td>
+            <td>baz</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="innertable1">
+                    <tr>
+                        <td>one</td>
+                        <td>two</td>
+                        <td>three</td>
+                    </tr>
+                    <tr>
+                        <td>four</td>
+                        <td>five</td>
+                        <td>six</td>
+                    </tr>
+                    <tr>
+                        <td>seven</td>
+                        <td>eight</td>
+                        <td>nine</td>
+                    </tr>
+                </table>
+            </td>
+            <td colspan="2" rowspan="2">
+                <table class="innertable2">
+                    <tr>
+                        <td>eins</td>
+                        <td>zwei</td>
+                        <td rowspan="2">drei sechs</td>
+                    </tr>
+                    <tr>
+                        <td>vier</td>
+                        <td>funf</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>abc</td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>Lunch</strong></td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+        </tr>
+    </table>
+
+    <form action="#" method="POST">
+        <table border="1" class="table3">
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Your name</td>
+                <td>
+                    <input type="text" name="name" size="22">
+                </td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <div>
+                        <input type="radio" name="sex" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sex" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Eye color</td>
+                <td>
+                    <select name="eye-color">
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                        <option value="hazel">hazel</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Check all that apply</td>
+                <td>
+                    <div>
+                        <input type="checkbox" name="size" id="length">
+                        <label for="length">Over 6 feet tall</label>
+                    </div> 
+                    <div>
+                        <input type="checkbox" name="size" id="weight">
+                        <label for="weight">Over 200 pounds</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="ability">Describe your athletic ability:</label>
+                    <textarea name="ability" id="ability" rows="10" cols="42"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>Enter my information</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div>
+        <div class="lists-box">
+            <h2>Unordered lists</h2>
+            
+            <div class="list-box">
+                <h4>Disc</h4>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </div>
+
+            <div class="list-box">
+                <h4>Square</h4>
+                <ul class="list-square">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </div>
+
+            <div class="list-box">
+                <h4>Circle</h4>
+                <ul class="list-circle">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </div>
+
+            <div class="list-box">
+                <h4>None - no bullets</h4>
+                <ul class="list-none">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lists-box">
+            <h2>Ordered lists</h2>
+                
+            <div class="list-box">
+                <h4>Decimal</h4>
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </div>
+        
+            <div class="list-box">
+                <h4>Decimal with leading zeros</h4>
+                <ol class="list-decimal-leading-zero">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </div>
+        
+            <div class="list-box">
+                <h4>Lowercase ascii letters</h4>
+                <ol class="list-lower-latin">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </div>
+        
+            <div class="list-box">
+                <h4>Lowercase roman numerals</h4>
+                <ol class="list-lower-roman">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
