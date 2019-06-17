@@ -1,0 +1,120 @@
+body {  
+    margin: 0;
+    padding: 0;  
+}
+
+header h1 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 50px;
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: 900;
+    color: #8b70c2;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    background: linear-gradient(to left, #ceccb3, #91918e);
+    text-shadow: 2px 2px 4px white;
+}
+
+header nav h2 {
+    padding: 20px 0 0 40px;
+    margin: 0;
+    color: #8b70c2;
+    text-shadow: 2px 2px 2px white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    word-spacing: 4px;
+}
+
+header nav {
+    padding: 0;
+    margin: 0;
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        );
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 100px 40px;
+    padding-top: 60px;
+}
+
+header nav ul:after {
+    content: "";
+    flex: auto;
+}
+
+header nav ul li {
+    z-index: 100;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #b0a0cf;
+    box-shadow: 1px 1px 3px 1px black;
+    transition: all 0.2s;
+    border-radius: 6px;
+}
+
+header nav ul li:hover {  
+    background-color: #8b70c2;
+    transform: translateY(2px) scale(1.1); 
+    box-shadow: 1px 1px 5px 2px black;  
+}  
+
+header nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    color: purple;
+}
+
+header nav ul li a:first-child {
+    border-bottom: 2px pink solid;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 2px gray solid;
+    border-right: 2px gray solid;
+    box-shadow: 0 0 100px 1px black;
+    background: linear-gradient(to right top, #eeefe1, #fbfcf2);
+    position: relative;
+}
+article h2 {
+    font-family: "Luminari", fantasy;
+}
+
+article p {
+    font-family: "Georgia", serif;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid gray;
+    text-align: center;
+    height: 60px;
+    background: linear-gradient(to top, #d5d6cd, #f6f7ed);
+}
+
+footer p {
+    padding-top: 5px;
+}
+
+article header, article section {
+    border-bottom: 2px black dotted;
+}
